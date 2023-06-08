@@ -1,8 +1,6 @@
 import json
 import scrapy
 import requests
-import pandas as pd
-import numpy as np
 from bson import ObjectId
 from datetime import datetime
 from pymongo import MongoClient

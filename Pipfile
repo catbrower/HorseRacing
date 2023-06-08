@@ -12,6 +12,12 @@ matplotlib = "*"
 scrapy = "*"
 requests = "*"
 pymongo = "*"
+selenium = "*"
+pytesseract = "*"
+webdriver-manager = "*"
+undetected-chromedriver = "*"
+pdf2image = "*"
+opencv-python = "*"
 
 [dev-packages]
 ipykernel = "*"
