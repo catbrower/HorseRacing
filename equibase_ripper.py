@@ -4,6 +4,10 @@ import selenium
 import pytesseract
 import undetected_chromedriver as uc
 
+# Race by day
+url = "https://www.equibase.com/premium/eqpVchartBuy.cfm?mo=1&da=1&yr=1991&trackco=ALL;ALL&cl=Y"
+
+# PDF
 url = 'https://www.equibase.com/premium/eqbPDFChartPlus.cfm?RACE=A&BorP=P&TID=SAR&CTRY=USA&DT=07/14/2022&DAY=D&STYLE=EQB'
 
 from selenium import webdriver
@@ -19,10 +23,4 @@ with uc.Chrome(options=options) as driver:
     time.sleep(10)
     print()
 
-assert "Python" in driver.title
-elem = driver.find_element(By.NAME, "q")
-elem.clear()
-elem.send_keys("pycon")
-elem.send_keys(Keys.RETURN)
-assert "No results found." not in driver.page_source
 driver.close()
